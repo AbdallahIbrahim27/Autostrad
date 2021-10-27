@@ -9,6 +9,9 @@
 <link href="icon.jpg" rel="icon">
 
 <style>
+@media only screen and (max-width: 600px) {
+}
+
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 
@@ -208,7 +211,6 @@ display: block
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
 
@@ -224,7 +226,6 @@ function carousel() {
   setTimeout(carousel, 4000);    
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
@@ -234,7 +235,6 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
